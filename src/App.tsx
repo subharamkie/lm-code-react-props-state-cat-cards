@@ -82,13 +82,19 @@ function App(): JSX.Element {
 				 species: 'Tiny Cat',
 				 favFoods: ['milk'],
 				 birthYear: 2021,
-			 }
+			 },
+			 {
+				name: "Captain Catface",
+				species: "Sea Cattain",
+				favFoods: ["fish, rum"],
+				birthYear: 2016,
+			  }
 	 ]);
-	 
+	 const catCount = cats.length;
 	return (
 		<>
 			<Navbar />
-			<Header />
+			<Header count={catCount}/>
 
 			<main>
 				<div className='cards__wrapper'>

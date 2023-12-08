@@ -84,14 +84,17 @@ function App(): JSX.Element {
 				 birthYear: 2021,
 			 }
 	 ]);
-	 console.log("Our pretties:",cats);
+	 
 	return (
 		<>
 			<Navbar />
 			<Header />
 
 			<main>
-				<div className='cards__wrapper'>{/* JSX code can go here */}</div>
+				<div className='cards__wrapper'>
+				
+					cats.map(item=> <CatCard/>)}
+				</div>
 			</main>
 
 			<Footer />
